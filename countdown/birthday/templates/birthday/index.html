@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" href="{% static 'birthday/styles.css' %}">
+    </head>
+    <body>
+        {% if value %}
+            <h1>It's my birthday</h1>
+        {% else %}
+            <h1>Birthday in: <br>{{ month }} months and {{ day }} days!</h1>
+        {% endif %}
+    </body>
+</html>
